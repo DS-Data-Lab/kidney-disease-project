@@ -2,8 +2,7 @@
 [![id](https://img.shields.io/badge/in-English-red.svg)](https://github.com/sliring/multilanguage-readme-pattern/blob/master/README.id.md)
 ---
 **Hi there 🙃, welcome to this repository**
-This project can be runned on **Google Colab** only. But you can modify this notebook to compatible on local/remote your jupyter notebook. In this case, I made a project for *Crawling data* from **Spotify API**. This dataset can apllied for learning *Data Analysting*, *Crawling Data*, *Machine Learning*, and *Clustering*. I'm *clustering* music data with **K-Means** algorithm on **sklearn** library:bar_chart:.
-
+This project contains analyze Kidney Disease Data. We get this dataset on [Kaggle](https://www.kaggle.com/datasets/mansoordaku/ckdisease/code). We procced on create some model and then implementing new knowledge to build useful apps.
 ## How to Use
 ### First
 - You need a ```Client ID``` and ```Client secret``` from [https://developer.spotify.com/](https://developer.spotify.com/)
