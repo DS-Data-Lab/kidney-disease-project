@@ -2,7 +2,7 @@
 [![id](https://img.shields.io/badge/in-English-red.svg)](https://github.com/)
 ---
 **Hi there 🙃, welcome to this repository**
-This project contains analyze Kidney Disease Data. We get this dataset on [Kaggle](https://www.kaggle.com/datasets/mansoordaku/ckdisease/code). We procced on create some model and then implementing new knowledge to build useful apps.
+This project contains analyze Kidney Disease Data. We get this dataset on [Kaggle](https://www.kaggle.com/datasets/mansoordaku/ckdisease/). We procced on create some model and then implementing new knowledge to build useful apps.
 ## How to Use
 ### First
 - You need a 
