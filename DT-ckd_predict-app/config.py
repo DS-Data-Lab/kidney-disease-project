@@ -6,7 +6,7 @@ import streamlit as st
 
 @st.cache_data()
 def load_data():
-    df = pd.read_csv('..\datasets\kidney_disease(cleaned)(classified).csv')
+    df = pd.read_csv('kidney_disease(cleaned).csv')
 
     x = df[["blood_pressure","specific_gravity","albumin","sugar","red_blood_cells","pus_cell","pus_cell_clumps",
             "bacteria","blood_glucose_random","blood_urea","serum_creatinine","sodium","potassium","haemoglobin",
