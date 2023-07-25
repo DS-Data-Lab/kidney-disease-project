@@ -7,7 +7,7 @@ from pathlib import Path
 
 @st.cache_data()
 def load_data():
-    df = pd.read_csv(Path(__file__).parents[0] / 'kidney_disease.csv')
+    df = pd.read_csv(Path(__file__).parents[1] / 'datasets/kidney_disease(cleaned)(classified).csv')
 
     x = df[["blood_pressure","specific_gravity","albumin","sugar","red_blood_cells","pus_cell","pus_cell_clumps",
             "bacteria","blood_glucose_random","blood_urea","serum_creatinine","sodium","potassium","haemoglobin",
