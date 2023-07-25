@@ -63,14 +63,17 @@ def app(df, x, y):
                 coronary_artery_disease,appetite,peda_edema,aanemia]
 
     # PREDICT BUTTON
-    if st.button("Predict Now!"):
-        prediction, score = predict(x,y,features)
-        score = score
-        st.info("Prediction Success...")
+    if st.button("Predict Now.. 🧰"):
+        try:
+            prediction, score = predict(x,y,features)
+            score = score
+            st.info("Prediction Success...")
 
-        if (prediction == 1):
-            st.warning("Data shows that this person is prone to kidney disease")
-        else:
-            st.success("The data shows that these people are relatively safe from kidney disease")
+            if (prediction == 1):
+                st.warning("Data shows that this person is prone to kidney disease😥")
+            else:
+                st.success("The data shows that these people are relatively safe from kidney disease🥳")
 
-        st.write(f"This model has accuracy {score*100}%")
+            st.write(f"This model has accuracy {score*100}%")
+        except:
+            st.info("You have not entered any data or may looks like the data you entered is incomplete. Please enter data first... 😇")
