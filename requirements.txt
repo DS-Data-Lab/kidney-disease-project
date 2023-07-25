@@ -3,4 +3,4 @@ numpy
 pandas
 matplotlib==3.5.2
 streamlit
-seaborn
+seaborn==0.12.2
