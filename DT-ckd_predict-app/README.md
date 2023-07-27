@@ -8,7 +8,7 @@ This application is implementation of Decision Tree Classifier Kidney Disease da
 ## Application Demo
 
 We've prepared a demo of this app with Streamlit Share. You can following this URL↙.
-[Kidney Disease Prediction Test Application](dtckidney-disease.streamlit.app)
+[Kidney Disease Prediction Test Application](https://dtckidney-disease.streamlit.app)
 
 ## How to use🤔?
 
@@ -21,12 +21,12 @@ Actually, the scope of this repository is a project that contains multiple appli
 Necessary Library if you want to run this app on local or remote development✅
 
 - this command can be follow if you have installed pip✅
-- [x] numpy `pip install numpy`
-- [x] pandas `pip install pandas`
-- [x] scikit-learn `pip install scikit-learn`
-- [x] matplotlib `pip install matplotlib`
-- [x] seaborn `pip install seaborn`
-- [x] streamlit `pip install streamlit`
+- [x] numpy `#f03c15` ```pip install numpy```
+- [x] pandas ```pip install pandas```
+- [x] scikit-learn ```pip install scikit-learn```
+- [x] matplotlib ```pip install matplotlib```
+- [x] seaborn ```pip install seaborn```
+- [x] streamlit ```pip install streamlit```
 
 ### How to run
 
