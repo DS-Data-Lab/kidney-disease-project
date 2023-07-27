@@ -17,13 +17,13 @@ def app(df, x, y):
     with col1:
         sugar = st.text_input('Input sugar value')
     with col1:
-        red_blood_cells = st.text_input('Input red blood cells value')
+        red_blood_cells = st.selectbox('Input red blood cells value', ('0 - abnormal', '1 - normal'))
     with col1:
-        pus_cell = st.text_input('Input push cell value')
+        pus_cell = st.selectbox('Input push cell value', ('0 - abnormal', '1 - normal'))
     with col1:
-        pus_cell_clumps = st.text_input('Input push cell clumps value')
+        pus_cell_clumps = st.selectbox('Input push cell clumps value', ('0 - notpresent', '1 - present'))
     with col1:
-        bacteria = st.text_input('Input bacteria value')
+        bacteria = st.selectbox('Input bacteria value', ('0 - notpresent', '1 - present'))
     with col2:
         blood_glucose_random = st.text_input('Input blood glucose random value')
     with col2:
@@ -43,24 +43,24 @@ def app(df, x, y):
     with col3:
         red_blood_cell_count = st.text_input('Input red blood cell count value')
     with col3:
-        hypertension = st.text_input('Input hypertension value')
+        hypertension = st.selectbox('Input hypertension value', ('0 - no', '1 - yes'))
     with col3:
-        diabetes_mellitus = st.text_input('Input diabetes mellitus value')
+        diabetes_mellitus = st.selectbox('Input diabetes mellitus value', ('3 - no', '4 - yes'))
     with col3:
-        coronary_artery_disease = st.text_input('Input coronary artery disease value')
+        coronary_artery_disease = st.selectbox('Input coronary artery disease value', ('1 - no', '2 - yes'))
     with col3:
-        appetite = st.text_input('Input appetite value')
+        appetite = st.selectbox('Input appetite value', ('0 - good', '1 - poor'))
     with col3:
-        peda_edema = st.text_input('Input peda edema value')
+        peda_edema = st.selectbox('Input peda edema value', ('0 - no', '1 - yes'))
     with col3:
-        aanemia = st.text_input('Input aanemia value')
+        aanemia = st.selectbox('Input aanemia value', ('0 - no', '1 - yes'))
 
     # FEATURES INIT
-    features = [blood_pressure,specific_gravity,albumin,sugar,red_blood_cells,pus_cell,
-                pus_cell_clumps,bacteria,blood_glucose_random,blood_urea,serum_creatinine,
+    features = [blood_pressure,specific_gravity,albumin,sugar,red_blood_cells[0],pus_cell[0],
+                pus_cell_clumps[0],bacteria[0],blood_glucose_random,blood_urea,serum_creatinine,
                 sodium,potassium,haemoglobin,packed_cell_volume,white_blood_cell_count,
-                red_blood_cell_count,hypertension,diabetes_mellitus,
-                coronary_artery_disease,appetite,peda_edema,aanemia]
+                red_blood_cell_count,hypertension[0],diabetes_mellitus[0],
+                coronary_artery_disease[0],appetite[0],peda_edema[0],aanemia[0]]
 
     # PREDICT BUTTON
     if st.button("Start Diagnostics.. 🧰"):
@@ -74,6 +74,6 @@ def app(df, x, y):
             else:
                 st.success("The data shows that these people are relatively safe from kidney disease🥳")
 
-            st.write(f"This model has accuracy {score*100}%")
+            st.write(f"This model has accuracy {score}%")
         except:
             st.info("You have not entered any data or may looks like the data you entered is incomplete. Please enter data first... 😇")
