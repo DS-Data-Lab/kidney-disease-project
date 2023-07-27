@@ -11,7 +11,7 @@ ___
 ## Requirements
 Necessary Library if you want to run this project on local development
 * this command can be follow if you have installed pip
-* [x] numpy ``` pip install numpy ```
+* [x] numpy `#f03c15` ``` pip install numpy ```
 * [x] pandas ``` pip install pandas ```
 * [x] scikit-learn ```pip install scikit-learn```
 * [x] matplotlib ``` pip install matplotlib ```
