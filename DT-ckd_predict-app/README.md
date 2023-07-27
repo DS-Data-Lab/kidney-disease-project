@@ -42,7 +42,7 @@ Necessary Library if you want to run this app on local or remote development✅
     cd DT-ckd_predict-app
 ```
 
-3. Run this command
+3. Next run streamlit host by following this command
 
 ```sh
     streamlit run main.py
@@ -61,6 +61,6 @@ Necessary Library if you want to run this app on local or remote development✅
 Improve your understanding with some of the links below which might be of great help🥰.
 
 - [Pypi✍](https://pypi.org/)
-- [Streamlit Docs✍]()
+- [Streamlit Docs✍](https://docs.streamlit.io/)
 - [Streamlit Share✍](share.streamlit.io)
-- [What's Chronic Kidney Disease?🧬]()
+- [What's Chronic Kidney Disease?🧬](https://www.kidney.org/atoz/content/about-chronic-kidney-disease)
