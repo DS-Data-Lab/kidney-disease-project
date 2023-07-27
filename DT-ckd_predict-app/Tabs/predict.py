@@ -63,11 +63,11 @@ def app(df, x, y):
                 coronary_artery_disease,appetite,peda_edema,aanemia]
 
     # PREDICT BUTTON
-    if st.button("Predict Now.. 🧰"):
+    if st.button("Start Diagnostics.. 🧰"):
         try:
             prediction, score = predict(x,y,features)
             score = score
-            st.info("Prediction Success...")
+            st.info("Diagnostics Success...")
 
             if (prediction == 1):
                 st.warning("Data shows that this person is prone to kidney disease😥")
