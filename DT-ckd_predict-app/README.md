@@ -21,7 +21,7 @@ Actually, the scope of this repository is a project that contains multiple appli
 Necessary Library if you want to run this app on local or remote development✅
 
 - this command can be follow if you have installed pip✅
-- [x] numpy `#f03c15` ```pip install numpy```
+- [x] numpy ```pip install numpy``` 
 - [x] pandas ```pip install pandas```
 - [x] scikit-learn ```pip install scikit-learn```
 - [x] matplotlib ```pip install matplotlib```
