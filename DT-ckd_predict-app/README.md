@@ -46,7 +46,7 @@ this command can be follow if you have installed pip✅ <br/>
     streamlit run main.py
 ```
 
-4. And finally..🥳 this app is successfully runned on your local computer. if this step not automatically open your browser, you can copy localhost URL on your command prompt and paste manually on your browser😅.
+4. And finally..🥳 this app is successfully runned on your local computer. If you have reached this step and your browser not automatically opened, you can copy localhost URL on your command prompt and paste manually on your browser😅.
 
 ---
 
