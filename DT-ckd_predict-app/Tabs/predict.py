@@ -1,5 +1,7 @@
 import streamlit as st
-from config import predict
+from config import *
+from sklearn.metrics import mean_squared_error, accuracy_score, classification_report, mean_absolute_error
+from sklearn.model_selection import train_test_split
 
 def app(df, x, y):
 
@@ -61,19 +63,24 @@ def app(df, x, y):
                 sodium,potassium,haemoglobin,packed_cell_volume,white_blood_cell_count,
                 red_blood_cell_count,hypertension[0],diabetes_mellitus[0],
                 coronary_artery_disease[0],appetite[0],peda_edema[0],aanemia[0]]
-
+    
     # PREDICT BUTTON
     if st.button("Start Diagnostics.. 🧰"):
         try:
-            prediction, score = predict(x,y,features)
-            score = score
+            prediction, model = predict(x,y,features)
             st.info("Diagnostics Success...")
-
+            x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=42)
+            y_pred = model.predict(x_test)
             if (prediction == 1):
                 st.warning("Data shows that this person is prone to kidney disease😥")
             else:
                 st.success("The data shows that these people are relatively safe from kidney disease🥳")
-
-            st.write(f"This model has accuracy {score}%")
+            print(f"{y_test}")
+            # print(f"{y_pred}")
+            print(f"{features}")
+            st.write(f"Accuracy Score: {accuracy_score(y_test, y_pred)*100}%")
+            st.write(f"MAE: {mean_absolute_error(y_test, y_pred)*100}%")
+            st.write(f"MSE: {mean_squared_error(y_test, y_pred)*100}%")
+            # st.write(f"CR:\n{classification_report(y_test, y_pred)}")
         except:
             st.info("You have not entered any data or may looks like the data you entered is incomplete. Please enter data first... 😇")

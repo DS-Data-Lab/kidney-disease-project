@@ -29,11 +29,11 @@ def train_model(x, y):
     )
 
     model.fit(x, y)
-    score = model.score(x, y)
-
-    return model, score
+    # score = model.score(x, y)
+    
+    return model
 
 def predict(x, y, features):
-    model, score = train_model(x, y)
+    model = train_model(x, y)
     prediction = model.predict(np.array(features).reshape(1,-1)) 
-    return prediction, score
+    return prediction, model
